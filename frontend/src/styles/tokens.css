@@ -1,0 +1,133 @@
+/* Retro Beige + Light Blue Theme - Comfy Vibes */
+
+:root {
+  /* Typography */
+  --font-sans: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  --fs-display: clamp(2.5rem, 8vw, 4rem);
+  --fs-h1: clamp(2rem, 6vw, 3rem);
+  --fs-h2: clamp(1.5rem, 4vw, 2.25rem);
+  --fs-h3: clamp(1.25rem, 3vw, 1.75rem);
+  --fs-body: 1.125rem;
+  --fs-small: 0.875rem;
+  --fs-caption: 0.75rem;
+  --lh: 1.6;
+  
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  
+  /* Radius */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  /* Shadows */
+  --shadow: 0 2px 8px rgba(139, 69, 19, 0.1);
+  --shadow-lg: 0 8px 32px rgba(139, 69, 19, 0.15);
+  --shadow-xl: 0 16px 64px rgba(139, 69, 19, 0.2);
+  
+  /* Transitions */
+  --transition: 0.2s ease;
+  --transition-slow: 0.4s ease;
+  
+  /* Retro Beige + Light Blue Color Palette */
+  --bg: #faf8f5; /* Warm beige background */
+  --surface: #ffffff; /* Pure white surface */
+  --surface-hover: #f8f6f3; /* Slightly darker beige for hover */
+  
+  --text: #2c1810; /* Deep brown text */
+  --text-muted: #8b7355; /* Muted brown */
+  --text-subtle: #a69b8c; /* Very subtle brown */
+  
+  --primary: #87ceeb; /* Sky blue */
+  --primary-hover: #7bb8d4; /* Darker sky blue */
+  --primary-contrast: #ffffff;
+  --primary-light: rgba(135, 206, 235, 0.1);
+  
+  --accent: #e6f3ff; /* Very light blue accent */
+  --accent-hover: #d1e7ff; /* Slightly darker accent */
+  
+  --border: #e8dcc8; /* Light beige border */
+  --border-light: #f0e6d8; /* Very light beige border */
+  
+  --success: #7fb069; /* Muted green */
+  --success-light: rgba(127, 176, 105, 0.1);
+  --warning: #f4a261; /* Muted orange */
+  --warning-light: rgba(244, 162, 97, 0.1);
+  --error: #e76f51; /* Muted red */
+  --error-light: rgba(231, 111, 81, 0.1);
+  
+  /* AI Agent Colors */
+  --ai-primary: #87ceeb; /* Sky blue */
+  --ai-secondary: #b8e6b8; /* Light mint */
+  --ai-accent: #ffd4b3; /* Peach */
+  
+  /* Retro Accent Colors */
+  --retro-pink: #ffb6c1; /* Light pink */
+  --retro-yellow: #f0e68c; /* Khaki */
+  --retro-lavender: #e6e6fa; /* Lavender */
+  --retro-mint: #98fb98; /* Pale green */
+}
+
+/* Utility Classes */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.gradient-ai {
+  background: linear-gradient(135deg, var(--ai-primary) 0%, var(--ai-secondary) 100%);
+}
+
+.gradient-retro {
+  background: linear-gradient(135deg, var(--retro-pink) 0%, var(--retro-lavender) 50%, var(--retro-mint) 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Retro Pattern Background */
+.retro-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, var(--retro-lavender) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, var(--retro-mint) 2px, transparent 2px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Focus Styles */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
